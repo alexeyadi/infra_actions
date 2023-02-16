@@ -54,6 +54,6 @@ jobs:
         username: ${{ secrets.USER }}
         key: ${{ secrets.SSH_KEY }}
         script: |
-          sudo docker pull alexeyadi/infra_actions
+          sudo docker pull megulya/infra_actions
           sudo docker stop $(sudo docker ps -a -q)
-          sudo docker run --rm -d -p 5000:5000 alexeyadi/infra_actions
+          sudo docker run --rm -d -p 5000:5000 megulya/infra_actions
